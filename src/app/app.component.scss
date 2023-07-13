@@ -1,0 +1,13 @@
+$padding: 1em 2em;
+
+header {
+    padding: $padding;
+    box-shadow: var(--normal-shadow);
+}
+main {
+    padding: $padding;
+    min-height: calc(100vh - 7.5em);
+}
+footer {
+    padding: $padding;
+}
