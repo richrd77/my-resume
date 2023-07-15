@@ -1,0 +1,44 @@
+div.timeline-wrapper {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 1em;
+    > div.time-icon {
+        position: absolute;
+        left: -30px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: red;
+        &::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute;
+            left: -4px;
+            top: 30px;
+        }
+        &::after {
+            content: '';
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            background-color: white;
+            top: 30px;
+            left: 20px;
+            transform: rotate(45deg);
+        }
+    }
+    > div.timeline-content {
+        padding: 1em 0;
+        > div.timeline-header {
+            background-color: white;
+            padding: 1em;
+        }
+        > div.timeline-body {
+            padding: 1em;
+            background-color: white;
+        }
+    }
+}

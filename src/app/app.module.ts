@@ -9,6 +9,7 @@ import {
 } from './components';
 import { AppConfig } from './models';
 import { CompaniesComponent } from './components/companies/companies.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CompaniesComponent } from './components/companies/companies.component';
     HolderComponent,
     PersonalComponent,
     CompaniesComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
