@@ -10,6 +10,6 @@ export class ProjectComponent {
   @Input() proj: Project;
 
   constructor() {
-    this.proj = { heading: 'heading', shortDescription: 'Description', time: 'July 2023', techStack: ['C#', 'angular', 'dotnet core'] };
+    this.proj = { heading: '', shortDescription: '', time: '', techStack: [] };
   }
 }

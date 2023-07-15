@@ -7,7 +7,6 @@ import {
   FooterComponent, HeaderComponent,
   HolderComponent, PersonalComponent
 } from './components';
-import { AppConfig } from './models';
 import { CompaniesComponent } from './components/companies/companies.component';
 import { ProjectComponent } from './components/project/project.component';
 
