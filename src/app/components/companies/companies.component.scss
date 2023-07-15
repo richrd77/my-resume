@@ -1,6 +1,4 @@
-// padding: 1em;
 div.wrapper {
-    overflow-y: auto;
     height: 100%;
     border-radius: 14px;
     background-color: var(--bg-color);
@@ -11,5 +9,9 @@ div.wrapper {
         border-bottom: 2px solid lightgray;
         padding-bottom: 10px;
         background-color: white;
+    }
+    > div.content {
+        max-height: calc(100% - 35px);
+        overflow-y: auto;
     }
 }
