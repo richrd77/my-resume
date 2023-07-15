@@ -8,6 +8,7 @@ import {
   HolderComponent, PersonalComponent
 } from './components';
 import { AppConfig } from './models';
+import { CompaniesComponent } from './components/companies/companies.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppConfig } from './models';
     HeaderComponent,
     HolderComponent,
     PersonalComponent,
+    CompaniesComponent,
   ],
   imports: [
     BrowserModule,

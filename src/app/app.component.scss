@@ -3,11 +3,14 @@ $padding: 1em 2em;
 header {
     padding: $padding;
     box-shadow: var(--normal-shadow);
+    // background-color: red;
 }
 main {
     padding: $padding;
     min-height: calc(100vh - 7.5em);
+    // background-color: yellow;
 }
 footer {
     padding: $padding;
+    // background-color: green;
 }
