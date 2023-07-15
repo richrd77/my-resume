@@ -2,7 +2,18 @@
     <div class="time-icon"></div>
     <div class="time-highlight"></div>
     <div class="timeline-content">
-        <div class="timeline-header">Header</div>
-        <div class="timeline-body">Body</div>
+        <div class="timeline-header" *ngIf="proj">
+            <span class="title" *ngIf="proj.heading">{{ proj.heading }}</span>
+            <span class="time" *ngIf="proj.time">{{ proj.time }}</span>
+        </div>
+        <div class="timeline-body" *ngIf="proj">
+            <p class="desc" *ngIf="proj.shortDescription">{{ proj.shortDescription }}</p>
+            <div class="tech-stack">
+                <p class="sk-t">Tech Stack:</p>
+                <ul class="skills" *ngIf="proj.techStack && proj.techStack.length > 0">
+                    <li *ngFor="let t of proj.techStack">{{t}}</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
