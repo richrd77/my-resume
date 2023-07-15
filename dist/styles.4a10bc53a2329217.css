@@ -1,0 +1,1 @@
+:root{--bg-color: rgba(244, 244, 244, 1);--color: black;--normal-shadow-color: rgba(0, 0, 0, .4);--normal-shadow: 0 0 8px 0 var(--normal-shadow-color)}*{margin:0;padding:0;box-sizing:border-box}body{color:var(--color);background-color:var(--bg-color)}
