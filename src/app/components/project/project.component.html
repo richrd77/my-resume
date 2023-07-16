@@ -8,9 +8,9 @@
         </div>
         <div class="timeline-body" *ngIf="proj">
             <p class="desc" *ngIf="proj.shortDescription">{{ proj.shortDescription }}</p>
-            <div class="tech-stack">
+            <div class="tech-stack" *ngIf="proj.techStack && proj.techStack.length > 0">
                 <p class="sk-t">Tech Stack:</p>
-                <ul class="skills" *ngIf="proj.techStack && proj.techStack.length > 0">
+                <ul class="skills">
                     <li *ngFor="let t of proj.techStack">{{t}}</li>
                 </ul>
             </div>
