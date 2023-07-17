@@ -1,13 +1,13 @@
 @mixin card-bg {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    
 }
 
 div.res {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px 1fr;
     gap: 1em;
-    max-height: calc(100vh - 10em);
+    // max-height: calc(100vh - 10em);
     > div.personal {
         @include card-bg();
         flex: 0.5;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../models';
+import { Project, SkillExperience } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +10,21 @@ export class ValueService {
 
   public get PlainSkills(): string[] {
     return ['C#', '.NET framework & dotnet Core', 'Webforms, MVC with Views & API', 'EntityFramework & EF Core', 'Angular', 'HTML, CSS & JavaScript', 'SQL, MongoDB'];
+  }
+
+  private Percent(rating: number): number {
+    return (rating / 9) * 100;
+  }
+
+  public get SkillExperience(): SkillExperience[] {
+    return [
+      { skill: 'C#', percentage: this.Percent(9), years: 9 },
+      { skill: '.NET Framework', percentage: this.Percent(9), years: 9 },
+      { skill: 'dotnet Core', percentage: this.Percent(5), years: 5 },
+      { skill: 'Angular 8+', percentage: this.Percent(7), years: 7 },
+      { skill: 'Entity Framework 6 / EFCore', percentage: this.Percent(7), years: 7 },
+      { skill: 'SQL', percentage: this.Percent(9), years: 9 },
+    ];
   }
 
   public get Projects(): Project[] {
