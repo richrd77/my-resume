@@ -6,13 +6,13 @@
     <div class="skills">
         <p>Skills</p>
         <ul>
-            <li>C#</li>
-            <li>.NET framework & dotnet Core</li>
+            <li *ngFor="let s of ser.PlainSkills">{{s}}</li>
+            <!-- <li>.NET framework & dotnet Core</li>
             <li>Webforms, MVC with Views & api</li>
             <li>EF6 & EF Core</li>
             <li>Angular</li>
             <li>HTML, CSS & JavaScript</li>
-            <li>SQL, MongoDB</li>
+            <li>SQL, MongoDB</li> -->
         </ul>
     </div>
 </div>
