@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
   FooterComponent, HeaderComponent,
-  HolderComponent, PersonalComponent
+  HolderComponent, PersonalComponent, CompanyHistoryComponent,
+  CompaniesComponent, ProjectComponent,
 } from './components';
-import { CompaniesComponent } from './components/companies/companies.component';
-import { ProjectComponent } from './components/project/project.component';
-import { SkillExperienceComponent } from './components/skill-experience/skill-experience.component';
-import { CompanyHistoryComponent } from './components/company-history/company-history.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { CompanyHistoryComponent } from './components/company-history/company-hi
     PersonalComponent,
     CompaniesComponent,
     ProjectComponent,
-    SkillExperienceComponent,
     CompanyHistoryComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatSliderModule,
+    MatButtonModule,
   ],
   providers: [{ provide: 'AppConfig', useValue: { assetsPath: '/assets/' } }],
   bootstrap: [AppComponent]

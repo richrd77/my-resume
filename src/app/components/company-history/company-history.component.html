@@ -1,1 +1,24 @@
-<p>company-history works!</p>
+<div class="wrapper">
+    <div>
+        <ng-container *ngTemplateOutlet="t; context: emp"></ng-container>
+    </div>
+    <div>
+        <ng-container *ngTemplateOutlet="t; context: edu"></ng-container>
+    </div>
+</div>
+
+<ng-template #t let-title="title" let-lst="lst">
+    <div class="wrapper-card">
+        <!-- <p>Employment History</p> -->
+        <p>{{title}}</p>
+        <div class="content">
+            <ul class="emp-history">
+                <li *ngFor="let l of lst.keys()"><span class="comp">{{l}}</span><span
+                        class="dates">{{lst.get(l)}}</span></li>
+                <!-- <li><span class="comp">Danske IT</span><span class="dates">Jul 2020 till date</span></li>
+                <li><span class="comp">CGI</span><span class="dates">May 2018 to Jul 2020</span></li>
+                <li><span class="comp">HCL</span><span class="dates">Dec 2013 to May 2018</span></li> -->
+            </ul>
+        </div>
+    </div>
+</ng-template>

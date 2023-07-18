@@ -13,17 +13,19 @@ export class ValueService {
   }
 
   private Percent(rating: number): number {
-    return (rating / 9) * 100;
+    return Number(((rating / 9) * 100).toFixed(2));
   }
 
   public get SkillExperience(): SkillExperience[] {
     return [
-      { skill: 'C#', percentage: this.Percent(9), years: 9 },
-      { skill: '.NET Framework', percentage: this.Percent(9), years: 9 },
-      { skill: 'dotnet Core', percentage: this.Percent(5), years: 5 },
-      { skill: 'Angular 8+', percentage: this.Percent(7), years: 7 },
-      { skill: 'Entity Framework 6 / EFCore', percentage: this.Percent(7), years: 7 },
-      { skill: 'SQL', percentage: this.Percent(9), years: 9 },
+      { skill: 'C#', years: 9 },
+      { skill: '.NET framework', years: 9 },
+      { skill: 'dotnet Core', years: 5 },
+      { skill: 'Webforms, MVC with Views & API', years: 9 },
+      { skill: 'HTML, CSS & JavaScript', years: 9 },
+      { skill: 'Angular 8+', years: 5 },
+      { skill: 'Entity Framework 6 / EFCore', years: 7 },
+      { skill: 'SQL', years: 9 },
     ];
   }
 

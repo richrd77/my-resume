@@ -1,0 +1,38 @@
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    > div {
+        max-width: 600px;
+    }
+}
+
+div.wrapper-card {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    > p {
+        font-weight: 600;
+    }
+    > div.content {
+        > ul.emp-history {
+            list-style: none;
+            > li {
+                > span.comp {
+                }
+                > span.dates {
+                    font-size: 0.8rem;
+                    margin: 0 1em;
+                    &::before {
+                        content: "[ ";
+                    }
+                    &::after {
+                        content: " ]";
+                    }
+                }
+            }
+        }
+    }
+}

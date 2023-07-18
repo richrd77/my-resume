@@ -6,13 +6,7 @@
     <div class="skills">
         <p>Skills</p>
         <ul>
-            <li *ngFor="let s of ser.PlainSkills">{{s}}</li>
-            <!-- <li>.NET framework & dotnet Core</li>
-            <li>Webforms, MVC with Views & api</li>
-            <li>EF6 & EF Core</li>
-            <li>Angular</li>
-            <li>HTML, CSS & JavaScript</li>
-            <li>SQL, MongoDB</li> -->
+            <li *ngFor="let s of ser.SkillExperience">{{s.skill}} ({{s.years}} years)</li>
         </ul>
     </div>
 </div>
